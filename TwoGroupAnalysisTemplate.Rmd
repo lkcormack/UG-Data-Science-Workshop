@@ -1,0 +1,26 @@
+---
+title: "Your Project Title Here"
+author: "Your Name Here"
+output: html_notebook
+---
+
+> This is a template for you to use to make your short report of your analysis and findings. > When you see text like this, you can delete after you read it.
+> Before you move on, make sure you change the title and author above!
+
+## Introduction
+ 
+> Here, briefly describe what your project was about, and what your prediction was.
+> This needn't be more than a single paragraph. 
+
+Place a 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
