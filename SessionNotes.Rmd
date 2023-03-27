@@ -15,6 +15,13 @@ socmed <- read_csv("data/SocMed.csv")
 ## Install the tidyverse
 First step is to get the package we will be working with, the tidyvese. We can run `install.packages("tidyverse")` in the console, or go to the packages pane and click "install" to install it.
 
+Then load it up!
+
+```{r}
+library(tidyverse)
+```
+
+
 ## Upload the data file we want to work from
 In the bottom-right panel, we see all the files associated with this project. Right now, there aren't many! We need to upload the data file so that we can work with it.
 
@@ -48,7 +55,7 @@ ggplot(scr, aes(x=scrTime,y=hap)) + geom_line()
 ## We can make lots of different types of plots
 Let's look at another type of data: group comparisons. In data science, we sometimes call this an A/B test. We'll load in a new dataset where we can compare fear of flying vs fear of driving.
 
-We'll make boxplots of the two groups's data.
+We'll make boxplots of the two groups' data.
 
 ```{r}
 ggplot(travel, aes(x=mode,y=fear))+geom_boxplot() 

@@ -1,0 +1,42 @@
+---
+title: "High level overview"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+
+caff <- read_csv("data/caffeineData.csv")
+colnames(caff)[2] <- "score"
+```
+
+# Example of two group high level
+
+## Experimental setup
+
+A researcher wants to test whether caffeine consumption can help you perform better on exams. Two groups of n=`r length(caff$score)/2` were given a general knowledge exam. The morning of the exam, one group consumed caffeine and the other consumed a placebo. 
+
+## Data summary 1: histograms
+
+```{r, echo=FALSE}
+ggplot(caff, aes(x=score, fill=group)) + geom_histogram(binwidth=1,alpha=.5)
+```
+
+## Data summary 2: Boxplots
+
+```{r, echo=FALSE}
+ggplot(caff, aes(x=group,y=score))+geom_boxplot()
+```
+
+## Inferential summary: Confidence interval plot
+
+```{r, echo=FALSE}
+caff %>% group_by(group) %>% summarize(N = n(), est = mean(score), ci=1.96*sd(score)/sqrt(N)) %>% ggplot(aes(x=group,y=est)) + geom_point() + geom_errorbar(aes(ymin=est-ci,ymax=est+ci))
+```
+
+
+
+# Example of X vs Y high level
+
+
