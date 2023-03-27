@@ -12,6 +12,9 @@ travel <- read_csv("data/FlyingVsDrivingFearData.csv")
 socmed <- read_csv("data/SocMed.csv")
 ```
 
+## Install the tidyverse
+First step is to get the package we will be working with, the tidyvese. We can run `install.packages("tidyverse")` to install it.
+
 ## Upload the data file we want to work from
 In the bottom-right panel, we see all the files associated with this project. Right now, there aren't many! We need to upload the data file so that we can work with it.
 
