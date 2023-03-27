@@ -11,7 +11,7 @@ caff <- read_csv("data/caffeineData.csv")
 colnames(caff)[2] <- "score"
 ```
 
-# Example of two group high level
+# Example of two groups
 
 ## Experimental setup
 
@@ -35,8 +35,10 @@ ggplot(caff, aes(x=group,y=score))+geom_boxplot()
 caff %>% group_by(group) %>% summarize(N = n(), est = mean(score), ci=1.96*sd(score)/sqrt(N)) %>% ggplot(aes(x=group,y=est)) + geom_point() + geom_errorbar(aes(ymin=est-ci,ymax=est+ci))
 ```
 
+Looks like the caffeine may actually be harmful to performance!
 
+# Example of X vs Y 
 
-# Example of X vs Y high level
+## Experimental setup
 
 
