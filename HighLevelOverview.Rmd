@@ -9,6 +9,7 @@ library(tidyverse)
 
 caff <- read_csv("data/caffeineData.csv")
 colnames(caff)[2] <- "score"
+exams <- read_csv("data/exams.csv")
 ```
 
 # Example of two groups
@@ -41,4 +42,11 @@ Looks like the caffeine may actually be harmful to performance!
 
 ## Experimental setup
 
+A researcher wants to test whether longer essays written for a standardized test lead to better scores. The researcher obtains records of past exams. Each exam is scored from 2 to 12 points, and length is measured as the number of paragraphs. 
+
+## Data summary 1: Descriptives of each variable
+
+```{r echo=FALSE}
+
+```
 
