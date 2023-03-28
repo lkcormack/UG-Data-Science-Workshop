@@ -47,6 +47,20 @@ A researcher wants to test whether longer essays written for a standardized test
 ## Data summary 1: Descriptives of each variable
 
 ```{r echo=FALSE}
+ggplot(exams, aes(x=number_of_paragraphs))+geom_histogram(binwidth = 1)
+ggplot(exams, aes(x=essay_scores))+geom_histogram(binwidth = 1)
+```
+
+
+## Scatterplot of the variables
+```{r echo=FALSE}
+ggplot(exams, aes(x=number_of_paragraphs,y=essay_scores)) + geom_point()
+```
+
+## Add trend line(s)
+
+```{r echo=FALSE}
+ggplot(exams, aes(x=number_of_paragraphs,y=essay_scores)) + geom_point() +geom_smooth(method="lm")
 
 ```
 
