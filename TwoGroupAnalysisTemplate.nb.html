@@ -1755,14 +1755,17 @@ display: none;
 <blockquote>
 <p>This is a template for you to use to make your short report of your
 analysis and findings. &gt; When you see text like this, you can delete
-after you read it. Before you move on, make sure you change the title
-and author above!</p>
+it after you’ve read it. Before you move on, make sure you change the
+title and author above!</p>
 </blockquote>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
 <blockquote>
 <p>Here, briefly describe what your project was about, and what your
 prediction was. This needn’t be more than a single paragraph.</p>
+</blockquote>
+<blockquote>
+<p>Load the tidyverse - always our first step!</p>
 </blockquote>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
@@ -1773,8 +1776,9 @@ prediction was. This needn’t be more than a single paragraph.</p>
 <!-- rnb-text-begin -->
 <hr />
 <blockquote>
-<p>Plot the data distribution for the two groups as either histograms or
-kde plots. Briefly introduce the plot here.</p>
+<p>In the code cell below, make a plot of the data distributions for the
+two groups as either histograms or kde plots. Briefly introduce the plot
+here.</p>
 </blockquote>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
@@ -1789,7 +1793,7 @@ kde plots. Briefly introduce the plot here.</p>
 </blockquote>
 <hr />
 <blockquote>
-<p>Make a boxplot of the two groups. Briefly introduce the plot
+<p>Make a boxplot of your two groups below. Briefly introduce the plot
 first.</p>
 </blockquote>
 <!-- rnb-text-end -->
@@ -1805,7 +1809,7 @@ first.</p>
 </blockquote>
 <hr />
 <blockquote>
-<p>Plot the means with 95% CIs Briefly introduce the plot.</p>
+<p>Below, plot the means with 95% CIs. Briefly introduce the plot.</p>
 </blockquote>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
@@ -1840,7 +1844,7 @@ the means in terms of the confidence intervals?</p>
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiWW91ciAyLUdyb3VwIFByb2plY3QgVGl0bGUgSGVyZSIKYXV0aG9yOiAiWW91ciBOYW1lIEhlcmUiCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KCj4gVGhpcyBpcyBhIHRlbXBsYXRlIGZvciB5b3UgdG8gdXNlIHRvIG1ha2UgeW91ciBzaG9ydCByZXBvcnQgb2YgeW91ciBhbmFseXNpcyBhbmQgZmluZGluZ3MuID4gV2hlbiB5b3Ugc2VlIHRleHQgbGlrZSB0aGlzLCB5b3UgY2FuIGRlbGV0ZSBhZnRlciB5b3UgcmVhZCBpdC4KPiBCZWZvcmUgeW91IG1vdmUgb24sIG1ha2Ugc3VyZSB5b3UgY2hhbmdlIHRoZSB0aXRsZSBhbmQgYXV0aG9yIGFib3ZlIQoKIyMgSW50cm9kdWN0aW9uCiAKPiBIZXJlLCBicmllZmx5IGRlc2NyaWJlIHdoYXQgeW91ciBwcm9qZWN0IHdhcyBhYm91dCwgYW5kIHdoYXQgeW91ciBwcmVkaWN0aW9uIHdhcy4KPiBUaGlzIG5lZWRuJ3QgYmUgbW9yZSB0aGFuIGEgc2luZ2xlIHBhcmFncmFwaC4gCgpgYGB7cn0KIyBsb2FkIHRoZSB0aWR5dmVyc2UhCmBgYAoKLS0tCgo+IFBsb3QgdGhlIGRhdGEgZGlzdHJpYnV0aW9uIGZvciB0aGUgdHdvIGdyb3VwcyBhcyBlaXRoZXIgaGlzdG9ncmFtcyBvciBrZGUgcGxvdHMuCj4gQnJpZWZseSBpbnRyb2R1Y2UgdGhlIHBsb3QgaGVyZS4KCmBgYHtyfQojIHBsb3Qgb2YgdGhlIGRhdGEgZGlzdHJpYnV0aW9ucwoKYGBgCgo+IEJyaWVmbHkgaW50ZXJwcmV0IHRoZSBwbG90IGhlcmUuCgotLS0KCj4gTWFrZSBhIGJveHBsb3Qgb2YgdGhlIHR3byBncm91cHMuCj4gQnJpZWZseSBpbnRyb2R1Y2UgdGhlIHBsb3QgZmlyc3QuCgpgYGB7cn0KIyBib3hwbG90IG9mIHRoZSBkYXRhCgpgYGAKCj4gSW50ZXJwcmV0ZSB0aGUgcGxvdCBoZXJlCgotLS0KCj4gUGxvdCB0aGUgbWVhbnMgd2l0aCA5NSUgQ0lzCj4gQnJpZWZseSBpbnRyb2R1Y2UgdGhlIHBsb3QuCgpgYGB7cn0KIyBwbG90IG9mIHRoZSBtZWFucyB3aXRoIDk1JSBjb25maWRlbmNlIGludGVydmFscwoKYGBgCgo+IEludGVycHJldGUgdGhlIHBsb3QgaGVyZSAtIGhvdyBzaG91bGQgd2UgaW50ZXJwcmV0IHRoZSBzZXBhcmF0aW9uIG9mIHRoZSBtZWFucwo+IGluIHRlcm1zIG9mIHRoZSBjb25maWRlbmNlIGludGVydmFscz8KCi0tLQoKPiBDb21wdXRlIGEgcC12YWx1ZSBhc3N1bWluZyBubyB0cnVlIGRpZmZlcmVuY2UgYmV0d2VlbiB0aGUgZ3JvdXBzCgpgYGB7cn0KICMgY29tcHV0ZSBhIHAtdmFsdWUKYGBgCgo+IEludGVycHJldCB0aGUgcC12YWx1ZQoKLS0tCgo+IEZpbmFsbHksIGJyaWVmbHkgc3VtbWFyaXplIHlvdXIgZmluZGluZ3MuCgoK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiWW91ciAyLUdyb3VwIFByb2plY3QgVGl0bGUgSGVyZSIKYXV0aG9yOiAiWW91ciBOYW1lIEhlcmUiCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KCj4gVGhpcyBpcyBhIHRlbXBsYXRlIGZvciB5b3UgdG8gdXNlIHRvIG1ha2UgeW91ciBzaG9ydCByZXBvcnQgb2YgeW91ciBhbmFseXNpcyBhbmQgZmluZGluZ3MuID4gV2hlbiB5b3Ugc2VlIHRleHQgbGlrZSB0aGlzLCB5b3UgY2FuIGRlbGV0ZSAgaXQgYWZ0ZXIgeW91J3ZlIHJlYWQgaXQuCj4gQmVmb3JlIHlvdSBtb3ZlIG9uLCBtYWtlIHN1cmUgeW91IGNoYW5nZSB0aGUgdGl0bGUgYW5kIGF1dGhvciBhYm92ZSEKCiMjIEludHJvZHVjdGlvbgogCj4gSGVyZSwgYnJpZWZseSBkZXNjcmliZSB3aGF0IHlvdXIgcHJvamVjdCB3YXMgYWJvdXQsIGFuZCB3aGF0IHlvdXIgcHJlZGljdGlvbiB3YXMuCj4gVGhpcyBuZWVkbid0IGJlIG1vcmUgdGhhbiBhIHNpbmdsZSBwYXJhZ3JhcGguIAoKPiBMb2FkIHRoZSB0aWR5dmVyc2UgLSBhbHdheXMgb3VyIGZpcnN0IHN0ZXAhCmBgYHtyfQojIGxvYWQgdGhlIHRpZHl2ZXJzZSEKYGBgCgotLS0KCj4gSW4gdGhlIGNvZGUgY2VsbCBiZWxvdywgbWFrZSBhIHBsb3Qgb2YgdGhlIGRhdGEgZGlzdHJpYnV0aW9ucyBmb3IgdGhlIHR3byBncm91cHMgCiAgYXMgZWl0aGVyIGhpc3RvZ3JhbXMgb3Iga2RlIHBsb3RzLgogID4gQnJpZWZseSBpbnRyb2R1Y2UgdGhlIHBsb3QgaGVyZS4KCmBgYHtyfQojIHBsb3Qgb2YgdGhlIGRhdGEgZGlzdHJpYnV0aW9ucwoKYGBgCgo+IEJyaWVmbHkgaW50ZXJwcmV0IHRoZSBwbG90IGhlcmUuCgotLS0KCj4gTWFrZSBhIGJveHBsb3Qgb2YgeW91ciB0d28gZ3JvdXBzIGJlbG93Lgo+IEJyaWVmbHkgaW50cm9kdWNlIHRoZSBwbG90IGZpcnN0LgoKYGBge3J9CiMgYm94cGxvdCBvZiB0aGUgZGF0YQoKYGBgCgo+IEludGVycHJldGUgdGhlIHBsb3QgaGVyZQoKLS0tCgo+IEJlbG93LCBwbG90IHRoZSBtZWFucyB3aXRoIDk1JSBDSXMuCj4gQnJpZWZseSBpbnRyb2R1Y2UgdGhlIHBsb3QuCgpgYGB7cn0KIyBwbG90IG9mIHRoZSBtZWFucyB3aXRoIDk1JSBjb25maWRlbmNlIGludGVydmFscwoKYGBgCgo+IEludGVycHJldGUgdGhlIHBsb3QgaGVyZSAtIGhvdyBzaG91bGQgd2UgaW50ZXJwcmV0IHRoZSBzZXBhcmF0aW9uIG9mIHRoZSBtZWFucwo+IGluIHRlcm1zIG9mIHRoZSBjb25maWRlbmNlIGludGVydmFscz8KCi0tLQoKPiBDb21wdXRlIGEgcC12YWx1ZSBhc3N1bWluZyBubyB0cnVlIGRpZmZlcmVuY2UgYmV0d2VlbiB0aGUgZ3JvdXBzCgpgYGB7cn0KICMgY29tcHV0ZSBhIHAtdmFsdWUKYGBgCgo+IEludGVycHJldCB0aGUgcC12YWx1ZQoKLS0tCgo+IEZpbmFsbHksIGJyaWVmbHkgc3VtbWFyaXplIHlvdXIgZmluZGluZ3MuCgoK</div>
 
 
 
