@@ -13,8 +13,10 @@ output: html_notebook
 > This needn't be more than a single paragraph. 
 
 > Load the tidyverse - always our first step!
+
 ```{r}
 # load the tidyverse!
+
 ```
 
 ---
@@ -36,11 +38,11 @@ output: html_notebook
 > Briefly introduce the plot first.
 
 ```{r}
-# boxplot of the data
+# scatterplot of the data
 
 ```
 
-> Interprete the plot here
+> Interpret the plot here
 
 ---
 
@@ -52,12 +54,12 @@ output: html_notebook
 
 ```
 
-> Interprete the plot here - how should we interpret the slope
+> Interpret the plot here - how should we interpret the slope
 > in terms of the confidence band?
 
 ---
 
-> Compute the table best-fit coefficients and their associated statisics
+> Compute the table of best-fit coefficients and their associated statisics
 
 ```{r}
  # compute linear model
