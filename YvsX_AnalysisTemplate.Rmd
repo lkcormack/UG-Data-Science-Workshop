@@ -1,0 +1,72 @@
+---
+title: "Your Y vs. X Project Title Here"
+author: "Your Name Here"
+output: html_notebook
+---
+
+> This is a template for you to use to make your short report of your analysis and findings. > When you see text like this, you can delete  it after you've read it.
+> Before you move on, make sure you change the title and author above!
+
+## Introduction
+ 
+> Here, briefly describe what your project was about, and what your prediction was.
+> This needn't be more than a single paragraph. 
+
+> Load the tidyverse - always our first step!
+```{r}
+# load the tidyverse!
+```
+
+---
+
+> In the code cell below, make a plot of the data distributions for your two variables,  
+  as either histograms or kde plots.
+  > Briefly introduce the plot here.
+
+```{r}
+# plot of the data distributions
+
+```
+
+> Briefly interpret the plot here.
+
+---
+
+> Make a scatter plot of your data below.
+> Briefly introduce the plot first.
+
+```{r}
+# boxplot of the data
+
+```
+
+> Interprete the plot here
+
+---
+
+> Below, add a best-fit line with 95% confidence bands to your plot.
+> Briefly introduce the plot.
+
+```{r}
+# plot of the means with 95% confidence intervals
+
+```
+
+> Interprete the plot here - how should we interpret the slope
+> in terms of the confidence band?
+
+---
+
+> Compute the table best-fit coefficients and their associated statisics
+
+```{r}
+ # compute linear model
+```
+
+> Interpret the slope coefficient in light of it's p-value and standard error.
+
+---
+
+> Finally, briefly summarize your findings.
+
+
